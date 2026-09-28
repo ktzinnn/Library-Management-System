@@ -17,4 +17,22 @@ public class User{
         this.name = name;
         
     }
+    public String getPassword(){
+        return password;
+    }
+    public void setPassword(String password){
+        this.password = password;
+    }
+    public BigDecimal getWallet(){
+        return wallet;
+    }
+    public void setWallet(BigDecimal wallet){
+        this.wallet = wallet;  
+    }
+    public String getAddress(){
+        return address;
+    }
+    public void setAddress(String address){
+        this.address = address;
+    }
 }
