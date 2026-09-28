@@ -4,7 +4,7 @@ public class User{
     private String password;
     private BigDecimal wallet;
     private String address;
-    public User(String Name, String password,BigDecimal wallet, String address){
+    public User(String name, String password,BigDecimal wallet, String address){
         this.name = name;
         this.password = password;
         this.wallet = wallet;
