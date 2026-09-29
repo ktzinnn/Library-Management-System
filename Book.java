@@ -1,10 +1,11 @@
 import java.time.LocalDate;
- class ItemLibrary{
+
+class Book {
     private String nameBook;
     private String nameAuthor;
     private LocalDate PublicAuthor;
 
-    public ItemLibrary(LocalDate PublicAuthor, String nameAuthor, String nameBook) {
+    public Book(LocalDate PublicAuthor, String nameAuthor, String nameBook) {
         this.PublicAuthor = PublicAuthor;
         this.nameAuthor = nameAuthor;
         this.nameBook = nameBook;
@@ -33,5 +34,5 @@ import java.time.LocalDate;
     public void setPublicAuthor(LocalDate PublicAuthor) {
         this.PublicAuthor = PublicAuthor;
     }
-    
+
 }
