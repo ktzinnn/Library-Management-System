@@ -10,21 +10,23 @@ public class App {
     public static void main(String[] args) {
         int option = 0;
         while (option != 3) {
-            try {
-                System.out.println("Welcome to Library" +
-                        "\nPress 1 if you already have an account" + "\nPress 2 if you do not have an account");
-                option = imput.nextInt();
-                switch (option) {
-                    case 1:
-                        Library();
-                        break;
-                    case 2:
-                        CreateAccount();
-                        break;
+            {
+                try {
+                    System.out.println("Welcome to Library" +
+                            "\nPress 1 if you already have an account" + "\nPress 2 if you do not have an account");
+                    option = imput.nextInt();
+                    switch (option) {
+                        case 1:
+                            Library();
+                            break;
+                        case 2:
+                            CreateAccount();
+                            break;
+                    }
+                } catch (Exception e) {
+                    System.out.println("Invalid Value");
+                    imput.nextLine();
                 }
-            } catch (Exception e) {
-                System.out.println("Invalid Value");
-                imput.nextLine();
             }
         }
     }
@@ -42,6 +44,8 @@ public class App {
     }
 
     public static void CreateAccount() {
-
+         User userObject = new User();
+         imput.nextLine();
+        System.out.println("Create Account!"+"\n------------------------------------");
     }
 }
