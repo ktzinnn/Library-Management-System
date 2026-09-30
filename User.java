@@ -8,6 +8,10 @@ public class User {
     private BigDecimal wallet;
     private String address;
 
+    public User() {
+
+    }
+
     public User(String address, String email, int id, String name, String password, BigDecimal wallet) {
         this.address = address;
         this.email = email;

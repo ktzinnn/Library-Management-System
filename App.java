@@ -12,8 +12,10 @@ public class App {
         while (option != 3) {
             {
                 try {
-                    System.out.println("Welcome to Library" +
-                            "\nPress 1 if you already have an account" + "\nPress 2 if you do not have an account");
+                    System.out.println("\n------------------------------------" + "\nWelcome to Library" +
+                            "\n------------------------------------" + "\nPress 1 if you already have an account"
+                            + "\nPress 2 if you do not have an account" + "\nPress 3 Exit"
+                            + "\n------------------------------------");
                     option = imput.nextInt();
                     switch (option) {
                         case 1:
@@ -44,8 +46,9 @@ public class App {
     }
 
     public static void CreateAccount() {
-         User userObject = new User();
-         imput.nextLine();
-        System.out.println("Create Account!"+"\n------------------------------------");
+        User userObject = new User();
+        imput.nextLine();
+        System.out.println("\n ------------------------------------" + "\nCreating Account!"
+                + "\n------------------------------------"+"\n");
     }
 }
