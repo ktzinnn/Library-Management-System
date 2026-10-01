@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 
 public class User {
-    private int id;
+    private int idUser;
     private String email;
     private String name;
     private String password;
@@ -12,10 +12,10 @@ public class User {
 
     }
 
-    public User(String address, String email, int id, String name, String password, BigDecimal wallet) {
+    public User(String address, String email, int idUser, String name, String password, BigDecimal wallet) {
         this.address = address;
         this.email = email;
-        this.id = id;
+        this.idUser = idUser;
         this.name = name;
         this.password = password;
         this.wallet = wallet;
@@ -55,11 +55,11 @@ public class User {
     }
 
     public int getId() {
-        return id;
+        return idUser;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int idUser) {
+        this.idUser = idUser;
     }
 
     public String getEmail() {
